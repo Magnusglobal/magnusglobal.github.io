@@ -9,8 +9,6 @@ body {
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     /*transition: background-image 0.5s ease-in-out; /* Adds smooth transitions */
-    overflow-y: hidden;
-    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
