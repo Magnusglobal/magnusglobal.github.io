@@ -3,7 +3,7 @@ document.getElementById("websiteBtn").onclick = function() {
 };
 
 document.getElementById("callBtn").onclick = function() {
-    window.location.href = "tel:+923357426667"; // Format: tel:+<countrycode><number without spaces or special chars>
+    window.location.href = "tel:+11234445555"; // Format: tel:+<countrycode><number without spaces or special chars>
 };
 
 document.getElementById("emailBtn").onclick = function() {
@@ -48,3 +48,19 @@ document.getElementById("linkedinBtn").onclick = function() {
 document.getElementById("whatsappBtn").onclick = function() {
     window.open("https://www.magnusglobal.de"); 
 };
+
+document.addEventListener("DOMContentLoaded", function() {
+    const lazyImages = document.querySelectorAll(".lazy-image");
+    
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.classList.add("loaded");
+                observer.unobserve(img);
+            }
+        });
+    });
+
+    lazyImages.forEach(img => imageObserver.observe(img));
+});
