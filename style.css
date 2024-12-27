@@ -132,3 +132,19 @@ h1, h2, h3, h4, h5, h6 {
       
     }
   }
+
+  @media (max-width: 768px) {
+    body {
+        background-image: url('images/magnus-global-background-mobile.jpg');
+    }
+}
+
+/* Progressive image loading */
+.lazy-image {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.lazy-image.loaded {
+    opacity: 1;
+}
