@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 50px 0px;
 }
 
 .header {
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 50px 0px;
 }
 
 .option {
@@ -47,7 +47,8 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     padding: 15px;
     margin: 7px;
-    width: 20rem;
+    width: 19rem;
+    height: 4.3rem;
     border-radius: 20px;
     border: none;
     font-family: "Montserrat";
@@ -107,6 +108,11 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
+#franchiseBtn {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
 
 
 @keyframes slideDownFadeIn {
@@ -137,12 +143,31 @@ h1, h2, h3, h4, h5, h6 {
     body {
         background-image: url('images/magnus-bg-mobile.jpg');
     }
+
+    #logo {
+        width: 200px;
+    }
+
+    .option {
+        width: 17rem;
+        height: 4rem;
+        font-size: 0.9rem;
+    }
+
+    .lazy-image {
+        width: 30px;
+    }
+
+    .icons {
+        width: 23px;
+    }
 }
 
 /* Progressive image loading */
 .lazy-image {
     opacity: 0;
     transition: opacity 0.3s ease-in;
+    padding-left: 5px;
 }
 
 .lazy-image.loaded {
@@ -167,6 +192,6 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
        screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
     body {
-        background-image: url('images/magnus-bg-desktop@2x.jpg');
+        background-image: url('images/magnus-bg-desktop.jpg');
     }
 }
