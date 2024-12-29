@@ -3,7 +3,7 @@ document.getElementById("websiteBtn").onclick = function() {
 };
 
 document.getElementById("callBtn").onclick = function() {
-    window.location.href = "tel:+11234445555"; // Format: tel:+<countrycode><number without spaces or special chars>
+    window.location.href = "tel:+923357426667"; // Format: tel:+<countrycode><number without spaces or special chars>
 };
 
 document.getElementById("emailBtn").onclick = function() {
